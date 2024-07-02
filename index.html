@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- fontawesome css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+        integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- code of main section -->
+
+    <section id="Gpt-main-container">
+        <nav class="navbar navbar-expand-lg p-3">
+            <div class="container-fluid">
+                <img src="img/logo.png" width="132px" alt="img">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto ms-auto mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-light active" aria-current="page" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">FAQs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <span class="navbar-text text-light signup-btn">
+                        <button type="button" class="btn btn-transparent text-light login-btn">Log In</button>
+                        <button type="button" class="btn btn-light">Sign Up Now</button>
+                    </span>
+                </div>
+            </div>
+        </nav>
+        code of main content is goes here
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="text-light text-center main-container-text">
+                        <h1>Detect AI-generated content with precision</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur. Ipsum lectus lobortis fermentum convallis. </p>
+                        <span class="navbar-text text-light signup-btn">
+                            <button type="button" class="btn btn-light ps-4 pe-4">Get Started</button>
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="d-flex justify-content-center shade-card">
+                            <div class="card mt-5">
+                                <div class="bg-light text-dark p-4 ai-chat-bot">
+                                    <h4>Was this text written by a human AI?</h4>
+                                    <p>Try detecting one of our sample texts:</p>
+                                    <div class="chat-btns">
+                                        <button type="button"
+                                            class="btn border border-dark rounded-pill text-dark chat-gpt-btns">Chat
+                                            GPT</button>
+                                        <button type="button"
+                                            class="btn border border-dark rounded-pill text-dark chat-gpt-btns">Chat
+                                            GPT</button>
+                                        <button type="button"
+                                            class="btn border border-dark rounded-pill text-dark chat-gpt-btns">Chat
+                                            GPT</button>
+                                        <button type="button"
+                                            class="btn border border-dark rounded-pill text-dark chat-gpt-btns">Chat
+                                            GPT</button>
+                                    </div>
+                                    <div id="textContainer" class="text-container" contenteditable="true">
+                                    </div>
+                                    <br>
+                                    <span class="d-flex justify-content-between ai-chat-bot-btns-content">
+                                        <button onclick="checkForAI()" type="button" class="btn btn-primary">Detect Content</button>
+                                        <button type="button" class="btn btn-light upload-btn">Upload File</button>
+                                    </span>
+                                    <div id="aiResult" class="ai-result"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="shade"></div>
+
+    <!-- code of works section is goes here -->
+
+    <section class="pt-3 pb-4 ps-5 pe-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12  d-flex align-items-center">
+                    <div class="p-3">
+                        <h1>How It works?</h1>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                    <div class="p-3 works-header">
+                        <h4>First Benefit</h4>
+                        <p>The advantage of hiring a workspace with us is that givees you comfortable service and
+                            all-around facilities.</p>
+                        <button type="button" class="btn border-0 ps-0 works-btn">More info &#x2192;</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                    <div class="p-3 works-header">
+                        <h4>First Benefit</h4>
+                        <p>The advantage of hiring a workspace with us is that givees you comfortable service and
+                            all-around facilities.</p>
+                        <button type="button" class="btn border-0 ps-0 works-btn">More info &#x2192;</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                    <div class="p-3 works-header">
+                        <h4>First Benefit</h4>
+                        <p>The advantage of hiring a workspace with us is that givees you comfortable service and
+                            all-around facilities.</p>
+                        <button type="button" class="btn border-0 ps-0 works-btn">More info &#x2192;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- code of slider section is goes here -->
+
+    <section id="slider-container" class="pt-3 pb-4 ps-4 pe-4">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="text-center pt-5 pb-5 slider-head">
+                        <h1>Client Reviews</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-3">
+                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card p-4 rounded">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <img width="65px" src="img/female1.png" alt="img">
+                                <div class="ms-2">
+                                    <h6 class="text-dark">Roberta</h6>
+                                    <p class="mb-0">@roberta</p>
+                                </div>
+                            </div>
+                            <div class="card-btn">
+                                <button type="button" class="btn border-0 rounded-pill">Web Developer</button>
+                            </div>
+                        </div>
+                        <hr style="border: 1px dashed #00000033">
+                        <div class="card-para">
+                            <p>Lorem ipsum dolor <span class="text-dark">sit am met consectetur</span>
+                                adipiscing elit vestibulum sed.</p>
+                            <hr style="border: 1px dashed #00000033">
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <img width="120px" src="img/ev.png" alt="img">
+                            <p style="color: #00000051;" class="mb-0 date-text fw-bold">Dec 12, 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card p-4 rounded">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <img width="65px" src="img/male3.png" alt="img">
+                                <div class="ms-2">
+                                    <h6 class="text-dark">Christian</h6>
+                                    <p class="mb-0">@christian</p>
+                                </div>
+                            </div>
+                            <div class="card-btn">
+                                <button type="button" class="btn border-0 rounded-pill ps-4 pe-4">UI/UX</button>
+                            </div>
+                        </div>
+                        <hr style="border: 1px dashed #00000033">
+                        <div class="card-para">
+                            <p>Lorem ipsum dolor <span class="text-dark">sit am met consectetur</span>
+                                adipiscing elit vestibulum sed.</p>
+                            <hr style="border: 1px dashed #00000033">
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <img width="120px" src="img/lem.png" alt="img">
+                            <p style="color: #00000051;" class="mb-0 date-text fw-bold">Dec 12, 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card p-4 rounded">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <img width="65px" src="img/male1.png" alt="img">
+                                <div class="ms-2">
+                                    <h6 class="text-dark">Alexis</h6>
+                                    <p class="mb-0">@alexix</p>
+                                </div>
+                            </div>
+                            <div class="card-btn">
+                                <button type="button" class="btn border-0 rounded-pill">UX Designer</button>
+                            </div>
+                        </div>
+                        <hr style="border: 1px dashed #00000033">
+                        <div class="card-para">
+                            <p>Lorem ipsum dolor <span class="text-dark">sit am met consectetur</span>
+                                adipiscing elit vestibulum sed.</p>
+                            <hr style="border: 1px dashed #00000033">
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <img width="120px" src="img/micro.png" alt="img">
+                            <p style="color: #00000051;" class="mb-0 date-text fw-bold">Dec 12, 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-3 mt-1">
+                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card p-4 rounded">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <img width="65px" src="img/male1.png" alt="img">
+                                <div class="ms-2">
+                                    <h6 class="text-dark">Alexis</h6>
+                                    <p class="mb-0">@alexis</p>
+                                </div>
+                            </div>
+                            <div class="card-btn">
+                                <button type="button" class="btn border-0 rounded-pill">UX Designer</button>
+                            </div>
+                        </div>
+                        <hr style="border: 1px dashed #00000033">
+                        <div class="card-para">
+                            <p>Lorem ipsum dolor <span class="text-dark">sit am met consectetur</span>
+                                adipiscing elit vestibulum sed.</p>
+                            <hr style="border: 1px dashed #00000033">
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <img width="90px" src="img/hub.png" alt="img">
+                            <p style="color: #00000051;" class="mb-0 date-text fw-bold">Dec 12, 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card p-4 rounded">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <img width="65px" src="img/male2.png" alt="img">
+                                <div class="ms-2">
+                                    <h6 class="text-dark">Fletch Skinner</h6>
+                                    <p class="mb-0">@fletch06</p>
+                                </div>
+                            </div>
+                            <div class="card-btn">
+                                <button type="button" class="btn border-0 rounded-pill ps-4 pe-4">Developer</button>
+                            </div>
+                        </div>
+                        <hr style="border: 1px dashed #00000033">
+                        <div class="card-para">
+                            <p>Lorem ipsum dolor <span class="text-dark">sit am met consectetur</span>
+                                adipiscing elit vestibulum sed.</p>
+                            <hr style="border: 1px dashed #00000033">
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <img width="60px" src="img/stripe.png" alt="img">
+                            <p style="color: #00000051;" class="mb-0 date-text fw-bold">Dec 12, 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card p-4 rounded">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <img width="65px" src="img/female2.png" alt="img">
+                                <div class="ms-2">
+                                    <h6 class="text-dark">Blair</h6>
+                                    <p class="mb-0">@blair</p>
+                                </div>
+                            </div>
+                            <div class="card-btn">
+                                <button type="button" class="btn border-0 rounded-pill">UX Designer</button>
+                            </div>
+                        </div>
+                        <hr style="border: 1px dashed #00000033">
+                        <div class="card-para">
+                            <p>Lorem ipsum dolor <span class="text-dark">sit am met consectetur</span>
+                                adipiscing elit vestibulum sed.</p>
+                            <hr style="border: 1px dashed #00000033">
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <img width="100px" src="img/square.png" alt="img">
+                            <p style="color: #00000051;" class="mb-0 date-text fw-bold">Dec 12, 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center pt-4 pb-4">
+                    <button type="button" class="btn border-0 ps-0 works-btn">View All &#x2192;</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- code of About Us section is goes here -->
+
+    <section class="pt-5 pb-4 ps-3 pe-3">
+        <div class="container-fluid">
+            <div class="row about-header">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                    <div class="w-100 mt-3 about-img">
+                        <img class="img-responsive" src="img/about.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                    <div class="ps-4 w-100 about-text ">
+                        <h4>About us</h4>
+                        <h1>we provide you the <br>best experience</h1>
+                        <p>You don’t have to worry about the result because all of these interiors are made by people
+                            who are professionals in their fields with an elegant and lucurious style and with premium
+                            quality materials</p>
+                        <button type="button" class="btn border-0 ps-0 works-btn">More info &#x2192;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- code of FAQs section is goes here -->
+
+    <section class="pt-4 pb-5 ps-3 pe-3">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="faq-head">
+                        <h1 class="text-dark">Frequently Asked <br> Questions?</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item border-top-0 border-start-0 border-end-0 mt-3 mb-4">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                    aria-controls="panelsStayOpen-collapseOne">
+                                    Lorem ipsum dolor sit a met consulter?
+                                </button>
+                            </h3>
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit a met consulter adipescent elit. Maxime Pisa null sed quips
+                                        metanotum quads</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-top-0 border-start-0 border-end-0 mt-3 mb-4">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseTwo">
+                                    Lorem ipsum dolor sit a met consulter?
+                                </button>
+                            </h3>
+                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit a met consulter adipescent elit. Maxime Pisa null sed quips
+                                        metanotum quads</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-top-0 border-start-0 border-end-0 mt-3 mb-4">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseThree">
+                                    Lorem ipsum dolor sit a met consulter?
+                                </button>
+                            </h3>
+                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit a met consulter adipescent elit. Maxime Pisa null sed quips
+                                        metanotum quads</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-top-0 border-start-0 border-end-0 mt-3 mb-4">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseThree">
+                                    Lorem ipsum dolor sit a met consulter?
+                                </button>
+                            </h3>
+                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit a met consulter adipescent elit. Maxime Pisa null sed quips
+                                        metanotum quads</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 faq-hidden">
+                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item border-top-0 border-start-0 border-end-0 mt-3 mb-4">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseFirst" aria-expanded="true"
+                                    aria-controls="panelsStayOpen-collapseFirst">
+                                    Lorem ipsum dolor sit a met consulter?
+                                </button>
+                            </h3>
+                            <div id="panelsStayOpen-collapseFirst" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit a met consulter adipescent elit. Maxime Pisa null sed quips
+                                        metanotum quads</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-top-0 border-start-0 border-end-0 mt-3 mb-4">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseThird" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseThird">
+                                    Lorem ipsum dolor sit a met consulter?
+                                </button>
+                            </h3>
+                            <div id="panelsStayOpen-collapseThird" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit a met consulter adipescent elit. Maxime Pisa null sed quips
+                                        metanotum quads</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-top-0 border-start-0 border-end-0 mt-3 mb-4">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseFourth" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseFourth">
+                                    Lorem ipsum dolor sit a met consulter?
+                                </button>
+                            </h3>
+                            <div id="panelsStayOpen-collapseFourth" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit a met consulter adipescent elit. Maxime Pisa null sed quips
+                                        metanotum quads</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-top-0 border-start-0 border-end-0 mt-3 mb-4">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseFifth" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseFifth">
+                                    Lorem ipsum dolor sit a met consulter?
+                                </button>
+                            </h3>
+                            <div id="panelsStayOpen-collapseFifth" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit a met consulter adipescent elit. Maxime Pisa null sed quips
+                                        metanotum quads</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- code of footer section is goes here -->
+
+    <footer id="footer" class="pt-5 pb-5 ps-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <div class="w-100 footer-text">
+                        <img width="132px" src="img/f-logo.png" alt="">
+                        <p class="mt-4">The advantage of hiring a workspace with us is that givees you comfortable
+                            service and all-around facilities.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="w-100 ms-5 footer-links footer-first-links">
+                        <ul class="navbar-nav">
+                            <p class="footer-para">Text Here</p>
+                            <li class="nav-item mb-2">
+                                <a class="nav-link" href="#">Email Marketing</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a class="nav-link" href="#">Campaigns</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Branding</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                    <div class="w-100 footer-links">
+                        <ul class="navbar-nav">
+                            <p class="footer-para">Quick Links</p>
+                            <li class="nav-item mb-2">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a class="nav-link" href="#">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">FAQs</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                    <div class="w-100 footer-links">
+                        <ul class="navbar-nav">
+                            <p class="footer-para">Follow Us</p>
+                            <li class="nav-item mb-2">
+                                <a class="nav-link" href="#"> <i class="fa-brands fa-facebook-f fs-4 me-2"></i>
+                                    Facebook</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a class="nav-link" href="#"> <i class="fa-brands fa-twitter fs-4 me-2"></i> Twitter</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> <i class="fa-brands fa-instagram fs-4 me-2"></i>
+                                    Instagram</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                    <div class="w-100 d-flex justify-content-center align-items-center pt-5 footer-end-text">
+                        <div class="w-100 mt-2 footer-copyright">
+                            <p style="color: #4c4d4ed2; font-size: 15px;">Copyright © 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 ">
+                    <div class="w-100 d-flex justify-content-center align-items-center pt-5 footer-end-text">
+                        <p class="me-4">Terms & Conditions</p>
+                        <p>Privacy Policy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- bootstrap Js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"
+        integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Include Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        function checkForAI() {
+            // Get the text container element
+            var textContainer = document.getElementById('textContainer');
+
+            // Get the text content
+            var text = textContainer.innerText;
+
+            // Clear the container
+            textContainer.innerHTML = '';
+
+            // Highlight the text
+            var highlightedText = '<span class="highlight">' + text + '</span>';
+            textContainer.innerHTML = highlightedText;
+
+            // Display the result
+            var aiResult = document.getElementById('aiResult');
+            aiResult.innerHTML = 'The text is 100% AI-generated.';
+        }
+    </script>
+
+</body>
+
+</html>
